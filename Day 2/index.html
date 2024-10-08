@@ -3,16 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Day 2</title>
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 class="heading">Age Calculator</h1>
-    <label for="age">Enter Age</label>
-    '<input type="number" name="age" id="age" value="" />'
-    <div class="result">
-      <h1 class="child">You are a child</h1>
-      <h2 class="teen">You are a teenager</h2>
-      <h1 class="adult">You are an adult</h1>
+    <div class="container">
+      <h1>Age Calculator</h1>
+      <h2>Enter Your Age</h2>
+      <input
+        type="number"
+        id="ageInput"
+        placeholder="Enter age"
+        min="0"
+        max="120"
+      />
+      <button id="submitBtn">Submit</button>
+      <h3 id="ageCategory"></h3>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
