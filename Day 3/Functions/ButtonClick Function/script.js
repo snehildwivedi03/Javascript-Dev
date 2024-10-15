@@ -1,6 +1,5 @@
-const myButton = document.getElementById("myButton");
-const resultDiv = document.getElementById("result");
-
-myButton.addEventListener("click", () => {
-  resultDiv.textContent = "You clicked the button!";
+const myBtn = document.getElementById("myButton");
+const result = document.querySelector(".result");
+myBtn.addEventListener("click", () => {
+  result.textContent = "You clicked the button.";
 });
