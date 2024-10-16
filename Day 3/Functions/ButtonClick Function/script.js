@@ -1,5 +1,16 @@
 const myBtn = document.getElementById("myButton");
 const result = document.querySelector(".result");
-myBtn.addEventListener("click", () => {
-  result.textContent = "You clicked the button.";
-});
+let isClicked = false;
+
+myBtn,
+  addEventListener("click", () => {
+    if (isClicked) {
+      result.textContent = "";
+      isClicked = false;
+      console.log("no");
+    } else {
+      result.textContent = "You Clicked the Button!";
+      isClicked = true;
+      console.log("YEs");
+    }
+  });
