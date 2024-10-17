@@ -14,3 +14,4 @@ myBtn,
       console.log("YEs");
     }
   });
+console.log(this);
